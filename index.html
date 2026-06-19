@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리동네 클린-링크</title>
 
-<title>우리동네 클린-링크</title>
+    <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<script src="js/location.js" defer></script>
-<script src="js/stores.js" defer></script>
-<script src="js/guide.js" defer></script>
-
+    <script src="location.js" defer></script>
+    <script src="graph.js" defer></script>
 </head>
 
 <body>
@@ -21,23 +20,21 @@
 </header>
 
 <section>
+    <h2>현재 위치 확인</h2>
+
     <button id="locationBtn">
         내 위치 찾기
     </button>
 
-    <p id="locationResult"></p>
+    <p id="locationResult">
+        위치를 확인해주세요.
+    </p>
 </section>
 
 <section>
-    <h2>가까운 판매처</h2>
+    <h2>지역별 판매점 수 분석</h2>
 
-    <ul id="storeList"></ul>
-</section>
-
-<section>
-    <h2>배출 가이드</h2>
-
-    <p id="guideText"></p>
+    <canvas id="storeChart"></canvas>
 </section>
 
 </body>
