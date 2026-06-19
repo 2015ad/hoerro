@@ -2,28 +2,21 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>우리동네 클린-링크</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>♻️ 우리동네 클린-링크</h1>
-            <p>공공데이터 기반 환경 정보 플랫폼</p>
-        </header>
-
+        <header><h1>♻️ 우리동네 클린-링크</h1></header>
         <section class="card">
-            <h2>📍 현재 위치 확인</h2>
-            <button id="locationBtn">내 위치 찾기</button>
-            <div id="locationResult">위치 버튼을 누르면 주소가 표시됩니다.</div>
+            <h2>📍 내 위치 기반 주소</h2>
+            <button id="locationBtn">위치 확인하기</button>
+            <div id="locationResult" style="margin-top:15px; font-weight:bold;">버튼을 누르고 [허용]을 선택하세요.</div>
         </section>
-
         <section class="card">
-            <h2>📊 지역별 판매점 수 분석</h2>
-            <div style="height: 300px;"><canvas id="storeChart"></canvas></div>
-            <p style="text-align: center; color: #888; margin-top: 10px;">(막대를 클릭하면 상세 정보가 나타납니다)</p>
+            <h2>📊 지역별 데이터 (클릭 가능)</h2>
+            <div style="height:300px;"><canvas id="storeChart"></canvas></div>
         </section>
     </div>
     <script src="app.js"></script>
