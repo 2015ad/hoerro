@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>우리동네 클린-링크</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
+<title>우리동네 클린-링크</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/location.js" defer></script>
+<script src="js/stores.js" defer></script>
+<script src="js/guide.js" defer></script>
+
 </head>
+
 <body>
 
 <header>
     <h1>♻️ 우리동네 클린-링크</h1>
-    <p>종량제 봉투 판매처 및 배출 가이드 서비스</p>
 </header>
 
-<section id="location">
+<section>
     <button id="locationBtn">
         내 위치 찾기
     </button>
+
+    <p id="locationResult"></p>
 </section>
 
-<section id="stores">
+<section>
     <h2>가까운 판매처</h2>
 
-    <ul id="storeList">
-        <li>판매처 데이터를 불러오는 중...</li>
-    </ul>
+    <ul id="storeList"></ul>
 </section>
 
-<section id="guide">
-    <h2>오늘의 배출 가이드</h2>
+<section>
+    <h2>배출 가이드</h2>
 
-    <p>
-        일반쓰레기 배출 가능
-    </p>
+    <p id="guideText"></p>
 </section>
-
-<script src="js/script.js"></script>
 
 </body>
 </html>
