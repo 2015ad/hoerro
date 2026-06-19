@@ -9,9 +9,8 @@
 <body>
     <div class="container">
         <h1>♻️ 우리동네 클린-링크</h1>
-        
         <div class="card">
-            <h2>🔍 지역 데이터 탐색기</h2>
+            <h2>📊 지역별 데이터 대시보드</h2>
             <select id="regionSelect">
                 <option value="">지역을 선택하세요</option>
                 <option value="강남구">강남구</option>
@@ -20,13 +19,9 @@
                 <option value="성북구">성북구</option>
                 <option value="노원구">노원구</option>
             </select>
-            <div id="infoBox" style="margin-top:15px; padding:10px; background:#e8f5e9; border-radius:5px;">
-                지역을 선택하면 상세 정보가 나타납니다.
-            </div>
+            <div id="infoBox">지역을 선택하면 상세 정보가 나타납니다.</div>
         </div>
-
-        <div class="card" style="height: 350px;">
-            <h2>📊 지역별 판매점 현황</h2>
+        <div class="card" style="height: 300px;">
             <canvas id="storeChart"></canvas>
         </div>
     </div>

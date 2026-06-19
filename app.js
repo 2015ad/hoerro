@@ -1,19 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const dataInfo = {
-        "강남구": "판매점 120개 | 환경 점수: 88점",
-        "서초구": "판매점 90개 | 환경 점수: 85점",
-        "송파구": "판매점 150개 | 환경 점수: 92점",
-        "성북구": "판매점 60개 | 환경 점수: 78점",
-        "노원구": "판매점 70개 | 환경 점수: 80점"
+    const data = {
+        "강남구": "판매점 120개 | 환경지수 88점",
+        "서초구": "판매점 90개 | 환경지수 85점",
+        "송파구": "판매점 150개 | 환경지수 92점",
+        "성북구": "판매점 60개 | 환경지수 78점",
+        "노원구": "판매점 70개 | 환경지수 80점"
     };
 
-    // 1. 선택 기능
+    // 선택 이벤트
     document.getElementById("regionSelect").addEventListener("change", (e) => {
-        const val = e.target.value;
-        document.getElementById("infoBox").innerText = dataInfo[val] || "지역을 선택해주세요.";
+        document.getElementById("infoBox").innerText = data[e.target.value] || "지역을 선택해주세요.";
     });
 
-    // 2. 그래프 그리기
+    // 그래프 그리기
     const ctx = document.getElementById("storeChart").getContext("2d");
     new Chart(ctx, {
         type: "bar",
