@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // 위치 서비스
     document.getElementById("locationBtn").addEventListener("click", () => {
         navigator.geolocation.getCurrentPosition(pos => {
             document.getElementById("locationResult").innerHTML = 
@@ -7,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // 그래프
     new Chart(document.getElementById("storeChart"), {
         type: "bar",
         data: {
